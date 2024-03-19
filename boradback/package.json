@@ -1,0 +1,16 @@
+{
+  "name": "boradback",
+  "version": "1.0.0",
+  "description": "this is backend for board",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Dileep kumar",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongoose": "^8.2.1"
+  }
+}

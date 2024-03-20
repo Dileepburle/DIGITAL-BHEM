@@ -50,18 +50,6 @@ function Whiteboard  ({user,uuid}) {
     
     console.log(canvasImage);
   
-    fetch('http://localhost/5000/:roomId',{
-      method:"POST",
-      
-      crossDomain:true,
-      headers:{
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(canvasImage)
-    })
-    .then((res)=>console.log(res))
-    .catch((err)=>console.log(err))
-},[isDrawing])
 
 const draw = () => {
     contextRef.current.globalCompositeOperation = "source-over";
